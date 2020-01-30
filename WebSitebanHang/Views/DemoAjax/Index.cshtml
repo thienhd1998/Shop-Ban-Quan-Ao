@@ -1,0 +1,12 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Layout/HomeLayout.cshtml";
+}
+
+@*Load Ajax theo cách thứ 1 dùng Ajax.ActionLink*@
+@Ajax.ActionLink("Load Ajax MVC","LoadAjaxActionLink",new AjaxOptions { HttpMethod="Get",UpdateTargetId="KetQua",InsertionMode=InsertionMode.InsertAfter})
+
+<div id="KetQua" style="height:150px;">
+    Đây là kết quả trả về : \
+</div>
